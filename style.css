@@ -1,0 +1,139 @@
+/*  ----------PIXEL ART MAKER-----------*/
+* {
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    line-height: 2em;
+  }
+  .center {
+    text-align: center;
+    margin: auto;
+  }
+  .shadow {
+    box-shadow: 0px 8px 18px -1px rgba(0, 0, 0, 0.75);
+  }
+  .content {
+    width: 90vw;
+    min-height: 99vh;
+    margin: auto;
+    border-radius: 5px;
+    background: linear-gradient(180deg, white, #141f30);
+    font-family: "Ubuntu";
+    font-weight: bold;
+  }
+  #header {
+    font-family: "Press Start 2p";
+    color: white;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #162f59;
+    border-radius: 5px;
+  }
+  .sub-header {
+    font-size: 35px;
+  }
+  input {
+    width: 30px;
+  }
+  #grid-and-info-list-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  button {
+    background-color: #162f59;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 1px;
+  }
+  button:hover {
+    border: 1px yellow solid;
+  }
+  #erase-button {
+    color: #162f59;
+    background-color: white;
+  }
+  #info-container {
+    width: 250px;
+    font-weight: bold;
+    display: none;
+    margin: 10px;
+  }
+  #info-list {
+    list-style-type: none;
+    font-size: 16px;
+    padding: none;
+    margin: 15px;
+  }
+  .grid-display-container {
+    padding-top: 20px;
+  }
+  #grid-table {
+    border-collapse: collapse;
+    background-color: white;
+  }
+  td {
+    border: solid 1px gray;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  /*------ COLORPICKER--------------------*/
+  
+  canvas {
+    cursor: crosshair;
+  }
+  .border {
+    border: 1px solid gray;
+  }
+  #canvas-container {
+    display: none;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #9ca0bc;
+    width: 300px;
+    max-height: 160px;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 0px 8px 18px -1px rgba(0, 0, 0, 0.75);
+    border: 1px solid gray;
+  }
+  canvas,
+  .small-label {
+    margin: 3px;
+  }
+  #close-canvas-button {
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    font-size: small;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: black;
+  }
+  .small-label {
+    font-size: 12px;
+  }
+  .small-view {
+    width: 13px;
+    height: 13px;
+  }
+  .view {
+    width: 45px;
+    height: 45px;
+  }
+  #recents-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .recent-color {
+    cursor: pointer;
+    margin: 2px;
+  }
+  

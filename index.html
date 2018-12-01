@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>Cheys: Pixel Art Maker</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+</head>
+
+<body>
+  <div class="content center shadow">
+    <h1 class="center shadow" id="header">PIXEL ART MAKER</h1>
+
+    <div class="grid-input-container center">
+      <form>
+        <div class="grid-input">
+          <h2 class="sub-header">Custom Grid</h2>
+          <label> Height: <input id = "grid-height" type="number" value = 15 /></label>
+          <label> Width: <input id = "grid-width" type="number" value = 25 /></label>
+          <button class="border shadow" id="form-button">New!</button>
+        </div>
+      </form>
+
+      <div id="color-picker-button-container" class="center">
+        <button class="border shadow" value="#162f59" id="color-picker-button">Colors</button>
+        <button class="border shadow" value="white" id="erase-button">Erase</button>
+        <button class="border shadow" title="click to Open/Close" id="info-button">Info</button>
+      </div>
+    </div>
+
+    <div id="grid-and-info-list-container">
+      <div class="grid-display-container">
+        <table id="grid-table" class="center shadow"></table>
+      </div>
+
+      <div id="info-container">
+        <h2 class="sub-header">How To:</h2>
+        <ul id="info-list">
+          <li class="info-list-item"> -Click on square to color</li>
+          <li class="info-list-item"> -Double click to erase</li>
+          <li class="info-list-item"> -Can color/erase on drag</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- ----------FOR CANVAS/COLORPICKER----------- -->
+  <div id="canvas-container">
+    <button id="close-canvas-button" class='close-button'>x</button>
+    <canvas id="color-palette" class="border canvas" width="40" height='150'></canvas>
+    <canvas id="color-shade" class="border canvas" width='150' height="150"></canvas>
+    <label class="small-label">Preview<div id="color-preview" class = "border view" ></div></label>
+    <label class="small-label">Recent<div id = "recents-container"></div></label>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
