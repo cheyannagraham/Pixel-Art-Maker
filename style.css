@@ -45,6 +45,7 @@
 }
 
 .sub-header {
+  width: 100%;
   font-size: 35px;
   color: var(--red)
 }
@@ -126,16 +127,21 @@ canvas {
 }
 
 #canvas-container {
+  font-family: Ubuntu;
   display: none;
-  border-radius: 5px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: top;
   position: absolute;
-  background-color: #9ca0bc;
-  width: 300px;
-  max-height: 160px;
-  padding: 0px;
-  margin: 0px;
-  box-shadow: 0px 8px 18px -1px rgba(0, 0, 0, 0.75);
-  border: 1px solid gray;
+  background-color: var(--white);
+  /* width: 250px; */
+  /* height: 200px; */
+  /* max-height: 160px; */
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.75);
+  border: 2px solid var(--dblue);
 }
 
 canvas,
@@ -145,7 +151,7 @@ canvas,
 
 #close-canvas-button {
   position: absolute;
-  right: -25px;
+  right: -15px;
   top: -25px;
   font-size: small;
   cursor: pointer;
@@ -156,17 +162,17 @@ canvas,
 }
 
 .small-label {
-  font-size: 12px;
+  font-size: .8rem;
 }
 
 .small-view {
-  width: 13px;
-  height: 13px;
+  width: 25px;
+  height: 25px;
 }
 
 .view {
-  width: 45px;
-  height: 45px;
+  width: 75px;
+  height: 75px;
 }
 
 #recents-container {
