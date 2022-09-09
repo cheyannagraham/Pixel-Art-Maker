@@ -1,4 +1,4 @@
-# Pixel Art Maker
+# [Pixel Art Maker](https://cheyannagraham.github.io/Pixel-Art-Maker/)
 PAM is a simple drawing app developed with JS,HTML, and CSS. 
 
 ## Getting Started
