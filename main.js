@@ -205,8 +205,11 @@ $("#color-palette").click(function (event) {
 
 $("#color-picker-button").click(function (event) {
   canvasContainer.css("display", "flex");
-  canvasContainer.css("left", event.pageX - 70);
-  canvasContainer.css("top", event.pageY);
+  canvasContainer.css("left", 0);
+  canvasContainer.css("right", 0);
+  canvasContainer.css("top", "40%");
+  canvasContainer.css("margin-left", "auto");
+  canvasContainer.css("margin-right", "auto");
 });
 
 $(".close-button").click(function () {

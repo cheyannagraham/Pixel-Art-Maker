@@ -134,9 +134,7 @@ canvas {
   align-items: top;
   position: absolute;
   background-color: var(--white);
-  /* width: 250px; */
-  /* height: 200px; */
-  /* max-height: 160px; */
+  max-width: 500px;
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
