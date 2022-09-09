@@ -5,6 +5,10 @@
 
 }
 
+html {
+  font-size: 1rem;
+}
+
 /*  ----------PIXEL ART MAKER-----------*/
 * {
   font-weight: normal;
@@ -37,7 +41,7 @@
 
 #header {
   font-family: "Press Start 2p";
-  font-size: 40px;
+  font-size: 2.5rem;
   padding: 10px;
   margin: 10px;
   color: var(--dblue);
@@ -46,7 +50,7 @@
 
 .sub-header {
   width: 100%;
-  font-size: 35px;
+  font-size: 2rem;
   color: var(--red)
 }
 
@@ -94,7 +98,7 @@ button:hover {
 }
 
 #info-list {
-  font-size: 16px;
+  font-size: 1rem;
   padding: none;
   margin: 15px;
   color: var(--dblue)
@@ -181,4 +185,13 @@ canvas,
 .recent-color {
   cursor: pointer;
   margin: 2px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:600px) {
+  html {
+    font-size: 0.7em;
+  }
+
 }
