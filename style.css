@@ -13,6 +13,13 @@
   line-height: 2em;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .center {
   text-align: center;
   margin: auto;
